@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bite & Bliss – Freshly Baked Happiness</title>
+
+  <!-- ===== Google Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ===== External Stylesheet ===== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER – Logo + Navigation
+  ============================================================ -->
+  <header class="header" id="home">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <span class="logo__icon">🥐</span>
+        <span class="logo__text">Bite <span class="accent">&amp;</span> Bliss</span>
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#home"    class="nav__link">Home</a></li>
+          <li><a href="#about"   class="nav__link">About</a></li>
+          <li><a href="#menu"    class="nav__link">Menu</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION – Tagline + CTA button
+  ============================================================ -->
+  <section class="hero">
+
+    <!-- Overlay sits on top of the background image -->
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content fade-in">
+      <p class="hero__eyebrow">Est. 2020 · Handcrafted Daily</p>
+      <h1 class="hero__title">
+        Freshly Baked<br />
+        <em>Happiness</em> in Every Bite
+      </h1>
+      <p class="hero__sub">
+        Made with love, real butter, and a sprinkle of joy — every single morning.
+      </p>
+      <!-- CTA button -->
+      <a href="#menu" class="btn btn--primary">Explore Menu</a>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+
+      <!-- Decorative image -->
+      <div class="about__img-wrap fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop"
+          alt="Fresh bread on a wooden counter"
+          class="about__img"
+        />
+        <!-- Floating badge -->
+        <div class="about__badge">
+          <span class="about__badge-num">5+</span>
+          <span class="about__badge-label">Years of<br/>Baking Joy</span>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="about__text fade-in">
+        <p class="section__tag">Our Story</p>
+        <h2 class="section__title">A Little Bakery with a <em>Big</em> Heart</h2>
+        <p>
+          Welcome to <strong>Bite &amp; Bliss</strong> — a cozy neighbourhood bakery tucked away on
+          Maple Street, where every recipe is a love letter to classic baking. Founded by
+          <strong>Shrawani Patil</strong>, our bakery started as a small home kitchen dream and grew
+          into a beloved community spot.
+        </p>
+        <p>
+          We source the finest local ingredients — farm-fresh eggs, organic flour, and real dairy
+          butter — to craft treats that taste just like grandma used to make, only a little more
+          Instagram-worthy. 😊
+        </p>
+        <a href="#menu" class="btn btn--outline">See Our Menu</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MENU SECTION – 6 bakery items in CSS Grid
+  ============================================================ -->
+  <section class="menu section" id="menu">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <p class="section__tag">What We Bake</p>
+        <h2 class="section__title">Our Signature <em>Menu</em></h2>
+        <p class="section__sub">Everything is baked fresh every morning — no preservatives, ever.</p>
+      </div>
+
+      <!-- Menu grid -->
+      <div class="menu__grid">
+
+        <!-- Item 1 – Cake -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop"
+              alt="Celebration Cake"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__tag">Bestseller</span>
+            <h3 class="menu-card__name">Classic Layer Cake</h3>
+            <p class="menu-card__desc">Moist vanilla sponge with strawberry cream &amp; fondant décor.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹650</span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 – Cupcake -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=400&auto=format&fit=crop"
+              alt="Cupcakes"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Dreamy Cupcakes</h3>
+            <p class="menu-card__desc">Fluffy chocolate or vanilla with swirled buttercream frosting.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹80 <small>/piece</small></span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 – Cookies -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&auto=format&fit=crop"
+              alt="Cookies"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <span class="menu-card__tag">Fan Fave</span>
+            <h3 class="menu-card__name">Choco Chip Cookies</h3>
+            <p class="menu-card__desc">Crispy edges, chewy centres, loaded with dark chocolate chips.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹30 <small>/piece</small></span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 – Donuts -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&auto=format&fit=crop"
+              alt="Donuts"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Glazed Donuts</h3>
+            <p class="menu-card__desc">Airy rings dipped in pink glaze and rainbow sprinkles.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹60 <small>/piece</small></span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 5 – Pastries -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&auto=format&fit=crop"
+              alt="Pastries"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Butter Pastries</h3>
+            <p class="menu-card__desc">Flaky, golden croissants &amp; Danish pastries with fruit filling.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹120</span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 6 – Bread -->
+        <article class="menu-card fade-in">
+          <div class="menu-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&auto=format&fit=crop"
+              alt="Artisan Bread"
+              class="menu-card__img"
+            />
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Artisan Sourdough</h3>
+            <p class="menu-card__desc">Slow-fermented, hand-shaped loaves with a beautifully crisp crust.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹180 <small>/loaf</small></span>
+              <button class="btn btn--sm">Order</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /menu__grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY SECTION – hover zoom effect
+  ============================================================ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <p class="section__tag">Eye Candy</p>
+        <h2 class="section__title">Fresh from the <em>Oven</em></h2>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop"
+            alt="Assorted pastries"
+          />
+        </div>
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop"
+            alt="Chocolate cakes"
+          />
+        </div>
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&auto=format&fit=crop"
+            alt="Decorated cupcakes"
+          />
+        </div>
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=600&auto=format&fit=crop"
+            alt="Freshly baked bread"
+          />
+        </div>
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1568051243858-533a607809a5?w=600&auto=format&fit=crop"
+            alt="Colourful macarons"
+          />
+        </div>
+
+        <div class="gallery__item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1590080874088-eec64895b423?w=600&auto=format&fit=crop"
+            alt="Cinnamon rolls"
+          />
+        </div>
+
+      </div><!-- /gallery__grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+
+      <div class="section__header fade-in">
+        <p class="section__tag">Find Us</p>
+        <h2 class="section__title">Come Say <em>Hello</em> 👋</h2>
+        <p class="section__sub">We'd love to see you! Stop by the bakery or drop us a message.</p>
+      </div>
+
+      <!-- Contact cards -->
+      <div class="contact__cards fade-in">
+
+        <div class="contact-card">
+          <span class="contact-card__icon">📍</span>
+          <h4>Address</h4>
+          <p>12, Maple Street, Near City Park<br />Thane, Maharashtra – 400601</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-card__icon">📞</span>
+          <h4>Phone</h4>
+          <p>+91 98765 43210</p>
+          <p class="contact-card__note">Mon–Sat · 7 AM – 8 PM</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-card__icon">✉️</span>
+          <h4>Email</h4>
+          <p>hello@biteandbliss.in</p>
+          <p class="contact-card__note">We reply within 24 hrs</p>
+        </div>
+
+      </div><!-- /contact__cards -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="logo__icon">🥐</span>
+        <span class="logo__text">Bite <span class="accent">&amp;</span> Bliss</span>
+      </div>
+
+      <p class="footer__copy">
+        &copy; 2026 Bite &amp; Bliss &nbsp;|&nbsp; Created with ❤️ by <strong>Shrawani Patil</strong>
+      </p>
+
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
